@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* body{
+    background-color: black;
+  } */
+  
+  .top_bar {
+    background-color: black;
+    color: white;
+    padding: 9px 0px;
+  }
+  
+  .container {
+    width: 85%;
+    margin: auto;
+  }
+  
+  .top_bar .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .top_bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .top_bar i {
+    font-size: 14px;
+  }
+  @media screen and (max-width:617px) {
+    .top_bar {
+      display: none;
+    }
+    
+  }
+  
+  .header_section .logo h2 {
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 35px;
+  }
+  
+  .header_section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header_section ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header_section {
+    background-color: rgb(196, 195, 195);
+    color: black;
+    padding: 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  .header_section ul li {
+    padding: 5px 2px;
+    text-transform: uppercase;
+  }
+  
+  .header_section ul li:hover {
+    border-bottom: 4px solid rgb(9, 9, 9);
+    background-color: rgb(250, 249, 249);
+    cursor: pointer;
+  }
+  
+  .nav_link {
+    position: relative;
+  }
+  
+  .header_section .dropdown  {
+    background-color: rgb(6, 6, 6);
+    color: rgb(254, 253, 253);
+    display: none;
+    padding: 10px;
+    margin-left: -10px;
+    position:absolute;
+    width: 140px;
+    top: 25px;
+    z-index: 1000;
+    /* z index doesn't let to overlap contents */
+  
+  }
+  
+  .header_section .dropdown li {
+    font-size: 13px;
+  }
+  
+  .nav_link:hover .dropdown{
+      display: block;
+  }
+  .menu_bar i{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .menu_bar{
+    display: none;
+  }
+  @media screen and(max-width:930px){
+    .container{
+      width:95%;
+    }
+    
+  }
+
+  @media screen and (max-width:917px){
+    .nav_elements ul{
+      display: none;
+    }
+    .menu_bar{
+      display: block;
+    }
+  }
+
+@media screen and(max-width:534px){
+  .header_section{
+    background-color: #000;
+    color: #fff;
+  }
+  
+}
+
+  .header_section .dropdown li:hover{
+      background-color: rgb(152, 152, 152);
+      border-bottom: 4px solid wheat;
+  }
+
+  /* heero section starts */
+  .hero_section{
+    background-color:rgb(213, 204, 190) ;
+    color: rgba(8, 23, 27, 0.436);
+    position:relative;
+  }  
+  .hero_section .overlay{
+    height: 600px;
+    width: 100%;
+    background: url('./imagess/pexels-tirachard-kumtanom-733853.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity:0.8;
+
+  }
+  .hero_section_content{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+  .hero_section_content{
+    font-size: 18px;
+    font-style: italic;
+    padding: 20px 0;
+    color: azure;
+  }
+  .hero_section_content button{
+    border: none;
+    background-color: rgb(138, 141, 141);
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-size: 17px;
+    
+    
+  }
+  .hero_section_content button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;}
+
+    .hero_section .hero_section_content h1{
+      font-variant: small-caps;
+      font-style: bold;
+  }
+  @media screen and(max-width:530px) {
+    .hero_section .overlay{
+      height: 500px;
+    }
+    .hero_section_content{
+      top:15%;
+      left:5%;
+    }
+    
+  }
+
+  
+  @media screen and(max-width:534px){
+    .hero_section{
+      height: 500px;
+    }
+    .hero_section_content{
+      top: 15%;
+      left: 5%;
+
+    }
+    .hero_section h1{
+      font-size: 20px;
+    }
+    .hero_section_content{
+      font-size: 10px;
+    }
+    
+  }
+
+  /* highlight section start */
+  .course_highlights{
+    position: relative;
+    top: -50px;
+  }
+  .course_highlights .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .course_card{
+    width: 350px;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+  }
+  .course_card h4{
+    background-color: rgb(139, 162, 193);
+    color: rgb(27, 35, 42);
+    text-align: center;
+    padding: 15px 0;
+  }
+  .course_card p{
+    padding: 15px;
+  }
+.course_card button{
+  border: none;
+  margin: 5px 15px 15px 15px;
+  padding: 5px 10px;
+  background-color: rgb(79, 112, 196);
+  color: rgb(254, 251, 251);
+  cursor: pointer;
+}
+
+  /* highlight section ends */
+  /* popular course stayling starts */
+  .popular_course{
+    padding: 0px;
+    margin-top: -30px;
+  }
+  .popular_course .container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+
+  }
+  .head{
+    text-align: center;
+    padding: 30px;
+  }
+  .head h2{
+    font-size: 40px;
+    color: rgb(32, 25, 158);
+  }
+  .head h2::before{
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: blueviolet;
+    display: block;
+    margin: 20px auto;
+  }
+  .popular_course .course_card img{
+    width: 100%;
+    height: 190px;
+  }
+  .popular_course .course_card h5{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+
+  }
+  .popular_course .course_card p{
+    font-style: italic;
+    margin-top: -20px;
+  }
+  .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(174, 190, 199) ;
+  }
+  .author .author_image{
+    margin-top: 5px;
+  }
+  .author .author_image img{
+    height: 80px;
+    width: 60px;
+    border-radius: 70%;
+
+  }
+  .author_name .name{
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom: -20px;
+
+  }
+  .author_name .name span{
+    color: rgb(42, 56, 62);
+  }
+.price{
+  background-color: rgb(46, 48, 134);
+  color: azure;
+  height: 25px;
+  padding: 20px;
+}
+.price p{
+  font-size: 20px;
+  font-weight: 550;
+  margin-top: 10px;
+}
+/* mid section styling starts */
+.mid_section{
+  background-color: #02335b;
+  color: #fff;
+  padding: 100px;
+  margin-top: 70px;
+}
+.mid_section .container{
+  display: flex;
+  justify-content: space-between;
+}
+.mid_section .button button{
+  border: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.mid_section .button button:hover{
+  background-color: transparent;
+  color: #fff;
+}
+
+.testimonial_section{
+  /* margin-top: 20px; */
+  text-align: center;
+  background: url(./imagess/489350.jpg)no-repeat;
+  background-size: cover;
+  padding: 20px 0 30px 0;
+}
+.testimonial_card .testi_image img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+
+}
+.testimonial_card p{
+  color: antiquewhite;
+  font-size: 18px;
+  padding: 20px;
+  font-style: italic;
+}
+.testimonial_card p i{
+  font-size: 35px;
+}
+.name_and_position h4{
+  font-size: 27px;
+  padding-top: 15px;
+}
+.testimonial_section h2{
+  color: #fff;
+}
+.testimonial_section h2::before{
+  background-color: #fff;
+}
+/* footer starts */
+.footer_section{
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer_section .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.footer_link h4{
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.footer_section ul{
+  list-style: none;
+}
+.footer_section ul li{
+  padding: 3px 0;
+}
+.footer_section .social_icons ul{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.footer_section .social_icons li{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+.footer_section .social_icons li i{
+  margin-top: 10px;
+  font-size: 14px
+}
+.footer_section p{
+  width: 85%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #ccc;
+}
